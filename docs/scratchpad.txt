@@ -1,0 +1,65 @@
+components:    
+    - mutations: entrypoint for write operations
+    - resolvers: how to resolve the types
+    - subscription
+    - queries:
+        - entrypoint for read operations
+        - filtered queries
+        - filtered nested queries
+    - fields
+        - scalar (primitive types in favorite pgming lang [ID, Int, Float, String, Boolean])
+        - object (type <type>), enum, union, interface
+        - custom scalar type: Date, etc (created using GraphQLScalarType)
+        - field nullability: id: ID! cant return null
+    - fragments
+    - arguments
+    - authentication
+    - authorization
+    - client-side caching
+    - loaders
+    - graphene
+    - naming conventions:
+        - field names: camelCase
+        - type names: PascalCase
+        - enum name: PascalCase
+        - enum values: ALL_CAPS
+
+    - apollo federated graphQL: (combines multiple subgraphs into one federated graphql instance)
+
+    -- done:
+    - adding documentation: descriptions (docstrings)
+    - schema: 
+        - collection of types and fields
+        - note: design ur schema based on how it's used not how it's stored
+
+
+graphene:
+    - deprecate fields
+    - authenticatedmiddleware
+    - django integration
+    - graphiql with django csrf submission
+    - 
+
+
+apollo-server@^2.25.3: shape of your data and how to fetch it
+graphql@^15.7.2: graphql schema and execute queries against it
+apollo-server-express@2.25.3
+
+apollo-server:
+    https://www.apollographql.com/docs/apollo-server/schema/schema#growing-with-a-schema
+
+apollo-client:
+    https://www.apollographql.com/docs/react/
+
+udemy:
+    https://www.udemy.com/course/graphql-by-example/learn/lecture/16572058#overview
+
+graphQL doc:
+    https://graphql.org/learn/
+
+graphene lib:
+    https://docs.graphene-python.org/projects/django/en/latest/
+
+apollo studio: 
+    https://studio.apollographql.com/org/premkumar-chalmetis-team/graphs?defaultGraphType=development
+
